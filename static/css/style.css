@@ -10,7 +10,8 @@
     display: inline-block;
 }
 
-.btn-link {
+.btn-link,
+.btn-outline-link {
     color: white !important;
     font-size: large !important;
 }
@@ -22,4 +23,9 @@
 
 .fa-cookie {
     font-size: large;
+}
+
+.input-group {
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
 }

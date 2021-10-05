@@ -50,7 +50,19 @@
 					<div class="site-heading">
 						<h1>Sweet Life</h1>
 						<span class="subheading">Find the best desserts recipes from all over the world!</span>
+						<br>
 					</div>
+					<form action="{{ url_for('search') }}" method="POST">
+							<div class="input-group mb-3">
+								<input type="text" name="query" id="query" class="form-control" placeholder="" aria-label="query" aria-describedby="button-addon2" required>
+								<label for="query"></label>
+								<div class="search">
+									<a href="{{ url_for('recipes') }}"></a>
+									<button class="btn btn-outline-link" type="button" id="button-addon2"><i class="fas fa-search"></i>Search Recipes</button>
+								</div>
+							</div>	  
+					</form>
+					
 				</div>
 			</div>
 		</div>

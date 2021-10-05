@@ -1,4 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
+
     <h2>{{ page_title }}</h2>
-{% endblock %}   
+
+    <p>Below you can find all our recipes. Enjoy!</p>
+
+    {% if recipes|length > 0 %}
+    <hr class="featurette-divider">
+
+        {% for recipe in recipes %}
+
+            <div class="col-sm-4">
+                <h3 class="post-title"><a href="/recipes/{{ recipe.url }}">{{ recipe.name }}</a></h3>
+                <img src="{{ recipe.image_source }}" class="img-thumbnail" alt="dessert">
+            </div>
+    
+        {% endfor %}
+    {% else %}
+        <h3>No Result Found!</h3>
+    {% endif %}
+
+{% endblock %}  
