@@ -1,24 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="card">
-            <div class="card-body">
-                <form action="{{ url_for('search') }}" method="POST">
-                    <div class="input-group mb-3">
-                        <input type="text" name="query" id="query" class="form-control" placeholder="" aria-label="query" aria-describedby="button-addon2" required>
-                        <label for="query"></label>
-                        <div class="search">
-                            <a href="{{ url_for('recipes') }}"></a>
-                            <button class="btn btn-outline-link" type="button" id="button-addon2"><i class="fas fa-search"></i>Search Recipes</button>
-                        </div>
-                    </div>	  
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
     
 {% endblock %}
     
