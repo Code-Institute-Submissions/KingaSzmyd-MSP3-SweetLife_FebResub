@@ -41,3 +41,7 @@
 .container {
     text-align: center;
 }
+
+label {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
