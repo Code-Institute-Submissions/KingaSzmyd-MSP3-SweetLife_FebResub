@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.col-sm-4 {
+.col-sm-3 {
     display: inline-block;
 }
 
@@ -35,4 +35,9 @@
 
 .card {
     background-color: #E3E2E2  !important;
+}
+
+.recipes, 
+.container {
+    text-align: center;
 }
