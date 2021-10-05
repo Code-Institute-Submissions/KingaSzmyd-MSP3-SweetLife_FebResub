@@ -25,7 +25,14 @@
     font-size: large;
 }
 
-.input-group {
-    padding-top: 30px !important;
-    padding-bottom: 50px !important;
+.fa-stack {
+    color: gray !important;
+}
+
+.btn-outline-link {
+    color: #D18195 !important;
+}
+
+.card {
+    background-color: #E3E2E2  !important;
 }

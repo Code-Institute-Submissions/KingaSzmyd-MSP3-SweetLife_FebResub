@@ -52,17 +52,6 @@
 						<span class="subheading">Find the best desserts recipes from all over the world!</span>
 						<br>
 					</div>
-					<form action="{{ url_for('search') }}" method="POST">
-							<div class="input-group mb-3">
-								<input type="text" name="query" id="query" class="form-control" placeholder="" aria-label="query" aria-describedby="button-addon2" required>
-								<label for="query"></label>
-								<div class="search">
-									<a href="{{ url_for('recipes') }}"></a>
-									<button class="btn btn-outline-link" type="button" id="button-addon2"><i class="fas fa-search"></i>Search Recipes</button>
-								</div>
-							</div>	  
-					</form>
-					
 				</div>
 			</div>
 		</div>
@@ -76,8 +65,6 @@
 
 	</div>
 	
-	<hr>
-	
 	<!-- Footer -->
 	<footer>
 		<div class="container">
@@ -85,30 +72,31 @@
 				<div class="col-lg-8 col-md-10 mx-auto">
 					<ul class="list-inline text-center">
 						<li class="list-inline-item">
-							<a href="#">
+							<a href="https://twitter.com/">
 								<span class="fa-stack fa-lg">
-	                  <i class="fas fa-circle fa-stack-2x"></i>
-	                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-	                </span>
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	                			</span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-							<a href="#">
+							<a href="https://www.facebook.com/ ">
 								<span class="fa-stack fa-lg">
-	                  <i class="fas fa-circle fa-stack-2x"></i>
-	                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-	                </span>
+									<i class="fas fa-circle fa-stack-2x"></i>
+	                  				<i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+	                			</span>
 							</a>
 						</li>
 						<li class="list-inline-item">
-							<a href="#">
+							<a href="https://www.instagram.com/">
 								<span class="fa-stack fa-lg">
-	                  <i class="fas fa-circle fa-stack-2x"></i>
-	                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-	                </span>
+	                  				<i class="fas fa-circle fa-stack-2x"></i>
+	                  				<i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+	                			</span>
 							</a>
 						</li>
 					</ul>
+					<hr>
 					<p class="copyright text-muted">Copyright &copy; <span id="copyright"></span></p>
 				</div>
 			</div>
