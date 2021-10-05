@@ -1,30 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>Add Recipe</h2>
+    <h2>New Recipe</h2>
     <br>
 
     <form method="POST" action="{{ url_for('add_recipe') }}">
         <div class="col-lg-8 col-md-10 mx-auto input-group flex-nowrap">
             <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01">Dessert Category</label>
-                <select class="form-select" id="inputGroupSelect01" required>
-                  <option selected>Choose...</option>
-                  <option value="category_name">Apple Pie</option>
-                  <option value="category_name">Birthday Cake</option>
-                  <option value="category_name">Brownie</option>
-                  <option value="category_name">Cheesecake</option>
-                  <option value="category_name">Chocolate</option>
-                  <option value="category_name">Crème Brulée</option>
-                  <option value="category_name">Cookies</option>
-                  <option value="category_name">Ice Cream</option>
-                  <option value="category_name">Meringue</option>
-                  <option value="category_name">Muffins</option>
-                  <option value="category_name">Panna Cotta</option>
-                  <option value="category_name">Tart</option>
-                  <option value="category_name">Tiramisu</option>
-                  <option value="category_name">Truffles</option>
-                  <option value="category_name">Waffles</option>
+                <label class="input-group-text" for="category_name">Dessert Category</label>
+                <select class="form-select validate" name="category_name" id="category_name" required>
+                  <option selected>Choose Category</option>
+                  {% for category in categories %}
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                  {% endfor %}
                 </select>
             </div>
         </div>
