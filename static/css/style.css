@@ -1,3 +1,25 @@
 .col-md-5 img {
     width: 100%;
 }
+
+.post-title {
+    text-align: center;
+}
+
+.col-sm-4 {
+    display: inline-block;
+}
+
+.btn-link {
+    color: white !important;
+    font-size: large !important;
+}
+
+.fa-bars, .fa-slash {
+    color: white;
+    font-size: large;
+}
+
+.fa-cookie {
+    font-size: large;
+}
