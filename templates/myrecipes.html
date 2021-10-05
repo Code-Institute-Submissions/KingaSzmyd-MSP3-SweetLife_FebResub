@@ -6,16 +6,23 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button fas fa-caret-down" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">      
-                        <strong>{{ recipe.recipe_name }}</strong>
+                        <strong>{{ recipe.category_name }}</strong>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>{{ recipe.category_name }}</strong>    
-                            <strong>{{ recipe.makes_for }}</strong> 
-                            <strong>{{ recipe.due_time }}</strong>
-                            <p>{{ recipe.recipe_ingredients }}</p>
-                            <p>{{ recipe.recipe_description }}</p>
+                            <div class="card">
+                                <div class="row">
+                                    <img src="{{ recipe.image_source }}" class="card-img-top" alt="dessert" style="width: 18rem;">
+                                    <div class="card-body" style="width: 18rem;">
+                                        <h5 class="card-title">{{ recipe.recipe_name }}</h5>
+                                        <strong><i class="fas fa-chart-pie"></i>{{ recipe.makes_for }}</strong> 
+                                        <strong><i class="fas fa-clock"></i>{{ recipe.due_time }}</strong>
+                                        <p>{{ recipe.recipe_ingredients }}</p>
+                                        <p>{{ recipe.recipe_description }}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
