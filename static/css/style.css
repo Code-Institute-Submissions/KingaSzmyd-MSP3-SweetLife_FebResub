@@ -38,6 +38,11 @@
     color: #D18195 !important;
 }
 
+.accordion-button {
+    background-color: #D18195 !important;
+    color: white  !important;
+}
+
 .card {
     background-color: #E3E2E2  !important;
 }

@@ -1,27 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="accordion" id="accordionExample">
-        {% for recipe in recipes %}
-            <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fas fa-caret-down" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">      
-                <strong>{{ recipe.recipe_name }}</strong> : {{ recipe.due_time }}
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>{{ recipe.category_name }}</strong>    
-                    <strong>{{ recipe.makes_for }}</strong> 
-                    <p>{{ recipe.recipe_ingredients }}</p>
-                    <p>{{ recipe.recipe_description }}</p>
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="accordion" id="accordionExample">
+            {% for recipe in recipes %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fas fa-caret-down" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">      
+                        <strong>{{ recipe.recipe_name }}</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>{{ recipe.category_name }}</strong>    
+                            <strong>{{ recipe.makes_for }}</strong> 
+                            <strong>{{ recipe.due_time }}</strong>
+                            <p>{{ recipe.recipe_ingredients }}</p>
+                            <p>{{ recipe.recipe_description }}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        {% endfor %}
-
-        
+            {% endfor %}
+        </div>
     </div>
-
-    
 {% endblock %}   
