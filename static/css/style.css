@@ -33,6 +33,11 @@
     color: #D18195 !important;
 }
 
+.input-group-text {
+    background-color: #E3E2E2  !important;
+    color: #D18195 !important;
+}
+
 .card {
     background-color: #E3E2E2  !important;
 }
@@ -44,4 +49,9 @@
 
 label {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
+
+#time,
+#portions {
+    display: inline-block !important;
 }

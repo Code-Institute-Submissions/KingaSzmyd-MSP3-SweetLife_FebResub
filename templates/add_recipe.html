@@ -2,35 +2,65 @@
 {% block content %}
 
     <h2>Add Recipe</h2>
+    <br>
 
     <form method="POST" action="{{ url_for('add_recipe') }}">
-        <div class="col-md-6 input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">
-                <i class="fas fa-user-cog"></i>
-                <label for="recipe_name">Recipe Name</label>
-            </span>
-            <input type="text" id="recipe_name" class="form-control validate" name="recipe_name" placeholder="recipe_name"  pattern="^[a-zA-Z0-9]{5,15}$" aria-label="recipe_name" aria-describedby="addon-wrapping" required>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" name="time" placeholder="time" aria-label="time">
-              <label for="time">Time of Preparation</label>
+        <div class="col-lg-8 col-md-10 mx-auto input-group flex-nowrap">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Dessert Category</label>
+                <select class="form-select" id="inputGroupSelect01" required>
+                  <option selected>Choose...</option>
+                  <option value="category_name">Apple Pie</option>
+                  <option value="category_name">Birthday Cake</option>
+                  <option value="category_name">Brownie</option>
+                  <option value="category_name">Cheesecake</option>
+                  <option value="category_name">Chocolate</option>
+                  <option value="category_name">Crème Brulée</option>
+                  <option value="category_name">Cookies</option>
+                  <option value="category_name">Ice Cream</option>
+                  <option value="category_name">Meringue</option>
+                  <option value="category_name">Muffins</option>
+                  <option value="category_name">Panna Cotta</option>
+                  <option value="category_name">Tart</option>
+                  <option value="category_name">Tiramisu</option>
+                  <option value="category_name">Truffles</option>
+                  <option value="category_name">Waffles</option>
+                </select>
             </div>
-            <div class="col">
-              <input type="text" class="form-control" name="portions" placeholder="portions" aria-label="portions">
-              <label for="portions">Portions</label>
+        </div>
+        <br>
+        <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Recipe Name</span>
+            <input type="text" name="recipe_name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+          </div>
+        <br>
+            <div class="input-group col-sm-4 mx-auto">
+                <span class="input-group-text" id="time"><i class="fas fa-clock"></i></span>
+                <input type="text" name="time" class="form-control" placeholder="Time" aria-label="time" aria-describedby="basic-addon1" required>
             </div>
+        <br>
+            <div class="input-group col-sm-4 mx-auto">
+                <span class="input-group-text" id="portions"><i class="fas fa-chart-pie"></i></span>
+                <input type="text" name="portions" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
+            </div>
+        <br>
+        <div class="input-group col-lg-8 col-md-10 mx-auto">
+            <span class="input-group-text">Ingredients</span>
+            <textarea class="form-control" id="recipe_ingredients" aria-label="Ingredients" required></textarea>
         </div>
         <br>
-        <div class="mb-3">
-            <label for="recipe_ingredients" class="form-label">Recipe Ingredients</label>
-            <textarea class="form-control" id="recipe_ingredients" name="recipe_ingredients" minlength="50" maxlength="300"></textarea>
+        <div class="input-group col-lg-8 col-md-10 mx-auto">
+            <span class="input-group-text">Description</span>
+            <textarea class="form-control" id="recipe_description" minlenght="50" maxlenght="300" aria-label="Recipe description" required></textarea>
         </div>
         <br>
-        <div class="mb-3">
-            <label for="recipe_description" class="form-label">Recipe Description</label>
-            <textarea class="form-control" id="recipe_description" name="recipe_description" minlength="50" maxlength="300"></textarea>
+        <div class="input-group col-sm-4 mx-auto mb-3">
+            <input type="file" class="form-control" name="img" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+        </div> 
+        <br>
+        <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-plus-circle"></i> Add Recipe</button>
         </div>
     </form>
 
