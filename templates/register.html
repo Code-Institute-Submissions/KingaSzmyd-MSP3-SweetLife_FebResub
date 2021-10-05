@@ -3,7 +3,7 @@
 
 <h2 class="center-align">Register</h2>
     <form method="POST" action="{{ url_for('register') }}">
-        <div class="col-md-6 input-group flex-nowrap">
+        <div class="col-md-6 mx-auto input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">
                 <i class="fas fa-user-plus"></i>
                 <label for="username"></label>
@@ -11,7 +11,7 @@
             <input type="text" class="form-control" name="username" placeholder="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="username" aria-describedby="addon-wrapping" required>
         </div>
         <br>
-        <div class="col-md-6 input-group flex-nowrap">
+        <div class="col-md-6 mx-auto input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">
                 <i class="fas fa-key"></i>
                 <label for="password"></label>
