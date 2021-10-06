@@ -7,7 +7,7 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button fas fa-caret-down" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">      
                         <strong>{{ recipe.category_name }}</strong>
-                        <a href="" class="btn btn-secondary btn-sm">Done</a>
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Done</a>
                         <a href="" class="btn btn-secondary btn-sm">Edit</a>
                         </button>
                     </h2>
