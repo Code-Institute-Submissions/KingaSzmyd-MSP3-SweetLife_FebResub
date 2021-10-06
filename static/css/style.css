@@ -60,3 +60,10 @@ label {
 #portions {
     display: inline-block !important;
 }
+
+.btn-sm {
+    margin: 5px; 
+    background-color: lightgray !important;
+    color: #D18195 !important;
+    float: right;
+}
