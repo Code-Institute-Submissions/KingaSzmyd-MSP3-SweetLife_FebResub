@@ -9,9 +9,13 @@
             <div class="input-group mb-3">
                 <label class="input-group-text" for="category_name">Dessert Category</label>
                 <select class="form-select validate" name="category_name" id="category_name" required>
-                  <option selected>Choose Category</option>
+                  <option disabled>Choose Category</option>
                   {% for category in categories %}
-                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    {% if category.category_name == recipe.category_name %}
+                        <option value="{{ category.category_name }}"selected>{{ category.category_name }}</option>
+                    {% else %}
+                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    {% endif %}
                   {% endfor %}
                 </select>
             </div>
@@ -19,12 +23,12 @@
         <br>
         <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Recipe Name</span>
-            <input type="text" name="recipe_name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+            <input type="text" value="{{ recipe.recipe_name }}" name="recipe_name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
           </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="time"><i class="fas fa-clock"></i></span>
-                <input type="text" name="time" class="form-control" placeholder="Time" aria-label="time" aria-describedby="basic-addon1" required>
+                <input type="text"  value="{{ recipe.due_time }}" name="time" class="form-control" placeholder="Time" aria-label="time" aria-describedby="basic-addon1" required>
             </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
@@ -39,7 +43,7 @@
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text">Description</span>
-            <textarea class="form-control" id="recipe_description" minlenght="50" maxlenght="300" aria-label="Recipe description" required></textarea>
+            <textarea class="form-control" id="recipe_description" minlenght="50" maxlenght="300" aria-label="Recipe description" required>{{- recipe.recipe_description -}}</textarea>
         </div>
         <br>
         <div class="input-group col-sm-4 mx-auto mb-3">
@@ -48,6 +52,7 @@
         </div> 
         <br>
         <div class="form-group">
+            <a href="{{ url_for('myrecipes') }}" class="btn btn-lg btn-danger"><i class="fas fa-window-close"></i>Cancel</a>
             <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-edit"></i> Edit Recipe</button>
         </div>
     </form>
