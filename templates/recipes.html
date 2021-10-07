@@ -25,20 +25,36 @@
 	</div>
 
     {% if recipes|length > 0 %}
-    <hr class="featurette-divider">
-
-        {% for recipe in recipes %}
-            <div class="container col-sm-3">
-    
-                    <h3 class="post-title secondary"><a href="/recipes/{{ recipe.url }}">{{ recipe.name }}</a></h3>
-                    <img src="{{ recipe.image_source }}" class="img-thumbnail" alt="dessert">
-                
-            </div>
-            
-    
-        {% endfor %}
+		<hr class="featurette-divider">
+		<div class="col-lg-8 col-md-10 mx-auto">
+			{% for recipe in recipes %}
+				{% if session.user|lower == recipe.created_by|lower %}
+					<a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Done</a>
+					<a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Edit</a>
+                {% endif %}
+   				
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="{{ recipe.image_source }}" class="img-fluid rounded-start" alt="dessert">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							  <h5 class="card-title"><em>{{ recipe.category_name }}</em>: {{ recipe.recipe_name }}</h5>
+							  <h6 class="card-title"><i class="fas fa-chart-pie"></i>{{ recipe.recipe_makes_for }} <i class="fas fa-clock"></i>{{ recipe.due_time }}</h6>
+							  <p class="card-text">{{ recipe.recipe_ingredients }}</p>
+							  <p class="card-text">{{ recipe.recipe_description }}</p>
+							  <p class="card-text"><small class="text-muted">by: {{ recipe.created_by }}</small></p>
+							</div>
+						</div>
+					</div>
+					<hr>
+			
+				
+			{% endfor %}
+          	
+        </div>
     {% else %}
-        <h3>No Result Found!</h3>
+        <h3 class="warning">No Result Found!</h3>
     {% endif %}
 
 {% endblock %}  

@@ -24,11 +24,9 @@ def index():
 
 @app.route("/recipes")
 def recipes():
-    data = []
-    with open("data/recipes.json", "r") as json_data:
-        data = json.load(json_data)
+    recipes = list(mongo.db.recipes.find())
     return render_template(
-        "recipes.html", page_title="Our Recipes", recipes=data)
+        "recipes.html", page_title="All Recipes", recipes=recipes)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -36,17 +34,6 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
-
-
-@app.route("/recipes/<recipes_name>")
-def recipes_about(recipes_name):
-    recipe = {}
-    with open("data/recipes.json", "r") as json_data:
-        data = json.load(json_data)
-        for obj in data:
-            if obj["url"] == recipes_name:
-                recipe = obj
-    return render_template("desserts.html", recipe=recipe)
 
 
 @app.route("/about")
@@ -63,12 +50,6 @@ def contact():
         flash("Thanks {}, we have recived your message!".format(
             request.form.get("name")))
     return render_template("contact.html", page_title="Contact Us")
-
-
-@app.route("/myrecipes")
-def myrecipes():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("myrecipes.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -146,7 +127,7 @@ def add_recipe():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
-            "recipe_description": request.form.getlist("recipe_description"),
+            "recipe_description": request.form.get("recipe_description"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
             "image_source": request.form.get("image_source"),
@@ -183,7 +164,7 @@ def edit_recipe(recipe_id):
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
-    return redirect(url_for("myrecipes"))
+    return redirect(url_for("recipes"))
 
 
 if __name__ == "__main__":
