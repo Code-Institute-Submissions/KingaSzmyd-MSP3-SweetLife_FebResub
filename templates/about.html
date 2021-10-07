@@ -5,11 +5,12 @@
 
 
     <h2>{{ page_title }}</h2>
+    <br>
     <p>We are the group of people, who adores to make and eat desserts. We try diffrent recepies from all over the
     world. We decided to create that website for sharing our passion with the others. 
     You can JOIN US and try our recipes and/or share your own ones!
     Our community of DESSERTS FUNS is getting bigger and bigger!</p>
-    <h6><strong>Do not hesitate and be part of Sweet Life!</strong></h6>
+    <h5><strong>Do not hesitate and be part of Sweet Life now!</strong></h5>
     <br>
     <hr class="featurette-divider">
 
@@ -19,21 +20,21 @@
 
             {% if loop.index % 2 != 0 %}
 
-                <div class="col-md-7">
+                <div class="col-md-7 mx-auto">
                     <h3>{{ loop.index }}. {{ member.name }}</h3>
                     <p>{{ member.description }}</p>
                     <p><em>{{ member.opinion }}</em></p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 mx-auto">
                     <img src="{{ member.image_source }}" alt="woman1" class="featurette-image image-responsive">
                 </div>
             
             {% else %}
                 
-                <div class="col-md-5">
+                <div class="col-md-5 mx-auto">
                     <img src="{{ member.image_source }}" alt="woman1" class="featurette-image image-responsive">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 mx-auto">
                     <h3>{{ loop.index }}. {{ member.name }}</h3>
                     <p>{{ member.description }}</p>
                     <p><em>{{ member.opinion }}</em></p>
