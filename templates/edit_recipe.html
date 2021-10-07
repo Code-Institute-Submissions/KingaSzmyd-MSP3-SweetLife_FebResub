@@ -22,18 +22,18 @@
         </div>
         <br>
         <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Recipe Name</span>
+            <span class="input-group-text" id="recipe_name">Recipe Name</span>
             <input type="text" value="{{ recipe.recipe_name }}" name="recipe_name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
           </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
-                <span class="input-group-text" id="time"><i class="fas fa-clock"></i></span>
+                <span class="input-group-text" id="due_time"><i class="fas fa-clock"></i></span>
                 <input type="text"  value="{{ recipe.due_time }}" name="time" class="form-control" placeholder="Time" aria-label="time" aria-describedby="basic-addon1" required>
             </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
-                <span class="input-group-text" id="portions"><i class="fas fa-chart-pie"></i></span>
-                <input type="text" name="portions" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
+                <span class="input-group-text" id="recipe_makes_for"><i class="fas fa-chart-pie"></i></span>
+                <input type="text" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
             </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
@@ -47,12 +47,12 @@
         </div>
         <br>
         <div class="input-group col-sm-4 mx-auto mb-3">
-            <input type="file" class="form-control" name="img" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            <input type="file" class="form-control" name="image_source" id="image_source">
+            <label class="input-group-text" for="image_source">Upload</label>
         </div> 
         <br>
         <div class="form-group">
-            <a href="{{ url_for('myrecipes') }}" class="btn btn-lg btn-danger"><i class="fas fa-window-close"></i>Cancel</a>
+            <a href="{{ url_for('recipes') }}" class="btn btn-lg btn-danger"><i class="fas fa-window-close"></i>Cancel</a>
             <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-edit"></i> Edit Recipe</button>
         </div>
     </form>

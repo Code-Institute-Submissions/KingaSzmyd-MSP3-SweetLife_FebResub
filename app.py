@@ -146,7 +146,7 @@ def edit_recipe(recipe_id):
         submit = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
-            "recipe_description": request.form.getlist("recipe_description"),
+            "recipe_description": request.form.get("recipe_description"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
             "image_source": request.form.get("image_source"),
