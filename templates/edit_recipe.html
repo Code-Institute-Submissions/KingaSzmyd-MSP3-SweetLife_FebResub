@@ -33,17 +33,17 @@
         <br>
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="recipe_makes_for"><i class="fas fa-chart-pie"></i></span>
-                <input type="text" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
+                <input type="text" value="{{ recipe.recipe_makes_for }}" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
             </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text">Ingredients</span>
-            <textarea class="form-control" id="recipe_ingredients" aria-label="Ingredients" required></textarea>
+            <textarea class="form-control" value="{{ recipe.recipe_ingredients }}" id="recipe_ingredients" aria-label="Ingredients" required>{{ recipe.recipe_ingredients }}</textarea>
         </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text">Description</span>
-            <textarea class="form-control" id="recipe_description" minlenght="50" maxlenght="300" aria-label="Recipe description" required>{{- recipe.recipe_description -}}</textarea>
+            <textarea class="form-control" id="recipe_description" minlenght="10" maxlenght="300" aria-label="Recipe description" required>{{ recipe.recipe_description }}</textarea>
         </div>
         <br>
         <div class="input-group col-sm-4 mx-auto mb-3">
@@ -53,7 +53,7 @@
         <br>
         <div class="form-group">
             <a href="{{ url_for('recipes') }}" class="btn btn-lg btn-danger"><i class="fas fa-window-close"></i>Cancel</a>
-            <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-edit"></i> Edit Recipe</button>
+            <a href="{{ url_for('recipes') }}" class="btn btn-lg btn-success"><i class="fas fa-check"></i></i>Done</a>
         </div>
     </form>
 
