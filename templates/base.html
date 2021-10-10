@@ -71,7 +71,18 @@
 			</div>
 		</div>
 	</header>
-	
+	<!-- Flash Messages -->
+	<section>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+				<div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="alert alert-primary" role="alert">{{ message }}</div>
+				</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
 	<!-- Main Content -->
 	
 	<br>

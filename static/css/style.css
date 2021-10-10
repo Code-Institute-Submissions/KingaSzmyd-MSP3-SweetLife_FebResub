@@ -69,3 +69,7 @@
     color: #D18195 !important;
     float: right;
 }
+
+.alert {
+    text-align: center;
+}
