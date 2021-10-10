@@ -109,8 +109,9 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template(
-        "profile.html", username=username)
+    if session["user"]:
+        return render_template("profile.html", username=username)
+    return redirect(url_for("login"))
 
 
 @app.route("/logout")
@@ -128,7 +129,7 @@ def add_recipe():
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
-            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_ingredients": request.form.getlist("recipe_ingredients"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
             "image_source": request.form.get("image_source"),
@@ -148,7 +149,7 @@ def edit_recipe(recipe_id):
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
-            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_ingredients": request.form.getlist("recipe_ingredients"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
             "image_source": request.form.get("image_source"),
