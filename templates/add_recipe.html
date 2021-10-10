@@ -19,31 +19,31 @@
         <br>
         <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
             <span class="input-group-text" id="recipe_name">Recipe Name</span>
-            <input type="text" value="{{ recipe.recipe_name }}" name="recipe_name" class="form-control" aria-label="Recipe Name" aria-describedby="inputGroup-sizing-default" required>
+            <input type="text" name="recipe_name" class="form-control" aria-label="Recipe Name" aria-describedby="inputGroup-sizing-default" required>
           </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="due_time"><i class="fas fa-clock"></i></span>
-                <input type="text" value="{{ recipe.due_time }}" name="due_time" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon1" required>
+                <input type="text" name="due_time" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon1" required>
             </div>
         <br>
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="recipe_makes_for"><i class="fas fa-chart-pie"></i></span>
-                <input type="text" value="{{ recipe.recipe_makes_for }}" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
+                <input type="text" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
             </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text" id="recipe_ingredients">Ingredients</span>
-            <input type="text" class="form-control" value="{{ recipe.recipe_ingredients }}" name="recipe_ingredients" id="recipe_ingredients" aria-label="Ingredients" required>
+            <input type="text" class="form-control" name="recipe_ingredients" id="recipe_ingredients" aria-label="Ingredients" required>
         </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text" id="recipe_description">Description</span>
-            <input type="text" class="form-control" value="{{ recipe.recipe_description }}" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="300" aria-label="Description" required>
+            <input type="text" class="form-control" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="300" aria-label="Description" required>
         </div>
         <br>
         <div class="input-group col-sm-4 mx-auto mb-3">
-            <input type="file" class="form-control" value="{{ image_source }}" name="image_source" id="image_source">
+            <input type="file" class="form-control" name="image_source" id="image_source">
             <label class="input-group-text" for="image_source">Upload</label>
         </div> 
         <br>
