@@ -38,12 +38,12 @@
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text">Ingredients</span>
-            <textarea class="form-control" value="{{ recipe.recipe_ingredients }}" id="recipe_ingredients" aria-label="Ingredients" required>{{ recipe.recipe_ingredients }}</textarea>
+            <input type="text" class="form-control" value="{{ recipe.recipe_ingredients }}" id="recipe_ingredients" aria-label="Ingredients" required>
         </div>
         <br>
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text">Description</span>
-            <textarea class="form-control" id="recipe_description" minlenght="10" maxlenght="300" aria-label="Recipe description" required>{{ recipe.recipe_description }}</textarea>
+            <input type="text" class="form-control"  value="{{ recipe.recipe_description }}"id="recipe_description" minlenght="10" maxlenght="300" aria-label="Recipe description" required>
         </div>
         <br>
         <div class="input-group col-sm-4 mx-auto mb-3">
@@ -53,8 +53,7 @@
         <br>
         <div class="form-group">
             <a href="{{ url_for('recipes') }}" class="btn btn-lg btn-danger"><i class="fas fa-window-close"></i>Cancel</a>
-            <a href="{{ url_for('recipes') }}" class="btn btn-lg btn-success"><i class="fas fa-check"></i></i>Done</a>
-        </div>
+            <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-check"></i> Done</button>
     </form>
 
 {% endblock %}
