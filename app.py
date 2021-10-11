@@ -132,7 +132,7 @@ def add_recipe():
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
-            "image_source": request.form.get("image_source"),
+            "recipe_image": request.form.get("recipe_image"),
             "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
@@ -153,7 +153,7 @@ def edit_recipe(recipe_id):
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_makes_for": request.form.get("recipe_makes_for"),
             "due_time": request.form.get("due_time"),
-            "image_source": request.form.get("image_source"),
+            "recipe_image": request.form.get("recipe_image"),
             "created_by": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
