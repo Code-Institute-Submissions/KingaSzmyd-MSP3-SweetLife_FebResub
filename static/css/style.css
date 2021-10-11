@@ -73,3 +73,48 @@
 .alert {
     text-align: center;
 }
+
+.callout-container {
+    height: 100vh;
+
+    background: url("https://images.unsplash.com/photo-1610337673044-720471f83677?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1372&q=80") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+
+    position: relative;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 990%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jumbotron h2 {
+    color: white;
+    font-size: 300%;
+    text-align: center;
+}
+
+.jumbotron .lead {
+    color: white;
+    font-size: 300%;
+    margin: 25px 0;
+}
+
+.link {
+    color: white;
+    font-size: 300%;
+    float: right;
+}

@@ -10,15 +10,18 @@
     <title>Error</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Oops! Page not found.</h2>
-        <div class="card-center col-sm-3">
-            <img src="https://images.unsplash.com/photo-1610337673044-720471f83677?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXJyb3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Sad-face" class="img-thumbnail">
+    <div class="container-fluid callout-container">
+        <div class="row">
+          <div class="col-12">
+            <section class="callout jumbotron text-center">
+                <h2 class="jumbotron-header">Oops! Page not found.</h2>
+                <h1 class="jumbotron-header">404</h1>
+                <h2 class="jumbotron-header">We can't find website you're looking for.</h2>
+                <br>
+                <a href="{{ url_for('index') }}" class="link">Go back home!</a>
+            </section>
+          </div>
         </div>
-        <h1>404</h1>
-        <p>We can't find website you're looking for.</p>
-        <a href="index.html">Go back home!</a>
     </div>
-    
 </body>
 </html> 
