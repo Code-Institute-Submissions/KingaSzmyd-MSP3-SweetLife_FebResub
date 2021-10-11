@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2 class="recipes">{{ page_title }}</h2>
+    <h2>{{ page_title }}</h2>
 
-    <p class="recipes">Below you can find all our recipes. Enjoy!</p>
-
+    <p>Below you can find all our recipes. Enjoy!</p>
+<!-- Search Bar -->
     <div class="row">
 		<div class="col-lg-8 col-md-10 mx-auto">
 			<div class="card">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-
+<!-- Recipe Card -->
     {% if recipes|length > 0 %}
 		<hr class="featurette-divider">
 		<div class="col-lg-8 col-md-10 mx-auto">

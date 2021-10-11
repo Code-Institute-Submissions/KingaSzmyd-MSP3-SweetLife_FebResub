@@ -2,7 +2,9 @@
 {% block content %}
 
 <h2 class="center-align">Register</h2>
+<!-- Register Form -->
     <form method="POST" action="{{ url_for('register') }}">
+    <!-- Username -->
         <div class="col-md-6 mx-auto input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">
                 <i class="fas fa-user-plus"></i>
@@ -11,6 +13,7 @@
             <input type="text" class="form-control" name="username" placeholder="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="username" aria-describedby="addon-wrapping" required>
         </div>
         <br>
+    <!-- Password -->
         <div class="col-md-6 mx-auto input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">
                 <i class="fas fa-key"></i>
@@ -19,17 +22,17 @@
             <input type="text" id="password" class="form-control validate" name="password" placeholder="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="password" aria-describedby="addon-wrapping required">
         </div>
         <br>
+    <!-- Register Btn -->
         <div class="form-group">
             <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit">Register<i class="fas fa-sign-in-alt"></i></button>
         </div>
     </form>
-
+    <!-- Redirecting Link to Log In -->
     <div class="row">
         <div class="col s12">
             <p class="center-align">
                 Already Registered? <a href="{{ url_for('login') }}">Log In</a>
             </p>
-
         </div>
     </div>
 

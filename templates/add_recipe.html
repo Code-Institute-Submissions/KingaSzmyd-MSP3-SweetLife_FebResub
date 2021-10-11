@@ -3,7 +3,7 @@
 
     <h2>New Recipe</h2>
     <br>
-
+<!-- Add Recipe Form -->
     <form method="POST" action="{{ url_for('add_recipe') }}">
         <div class="col-lg-8 col-md-10 mx-auto input-group flex-nowrap">
             <div class="input-group mb-3">
@@ -17,36 +17,43 @@
             </div>
         </div>
         <br>
+    <!-- Recipe Name -->
         <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
             <span class="input-group-text" id="recipe_name">Recipe Name</span>
             <input type="text" name="recipe_name" class="form-control" aria-label="Recipe Name" aria-describedby="inputGroup-sizing-default" required>
           </div>
         <br>
+    <!-- Due Time -->
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="due_time"><i class="fas fa-clock"></i></span>
                 <input type="text" name="due_time" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon1" required>
             </div>
         <br>
+    <!-- Recipe Makes For - Portions -->
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="recipe_makes_for"><i class="fas fa-chart-pie"></i></span>
                 <input type="text" name="recipe_makes_for" class="form-control" placeholder="Portions" aria-label="portions" aria-describedby="basic-addon1" required>
             </div>
         <br>
+    <!-- Ingrednients -->
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text" id="recipe_ingredients">Ingredients</span>
             <input type="text" class="form-control" name="recipe_ingredients" id="recipe_ingredients" aria-label="Ingredients" required>
         </div>
         <br>
+    <!-- Recipe Description -->
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text" id="recipe_description">Description</span>
             <input type="text" class="form-control" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="150" aria-label="Description" required>
         </div>
         <br>
+    <!-- Recipe Image -->
         <div class="input-group col-sm-4 mx-auto mb-3">
             <label class="input-group-text" for="recipe_image">Add Image</label>
             <input type="url" class="form-control" name="recipe_image" id="recipe_image">
         </div> 
         <br>
+    <!-- Add Recipe Btn -->
         <div class="form-group">
             <button type="submit" class="btn btn-lg btn-success" id="submit" value="Submit"><i class="fas fa-plus-circle"></i> Add Recipe</button>
         </div>

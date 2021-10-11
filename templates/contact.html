@@ -6,9 +6,10 @@
 
     <div class="row">
 		<div class="col-lg-8 col-md-10 mx-auto">
-
 			<p>Want to get in touch? Fill out the form below to send us a message and we will get back to you as soon as possible!</p>
+	<!-- Email Form -->
 			<form method="POST" name="sentMessage" id="contactForm" novalidate>
+			<!-- Name -->
 				<div class="control-group">
 					<div class="form-group floating-label-form-group controls">
 						<label for="name">Name</label>
@@ -16,6 +17,7 @@
 						<p class="help-block text-danger"></p>
 					</div>
 				</div>
+			<!-- Email Address -->
 				<div class="control-group">
 					<div class="form-group floating-label-form-group controls">
 						<label for="email">Email Address</label>
@@ -23,6 +25,7 @@
 						<p class="help-block text-danger"></p>
 					</div>
 				</div>
+			<!-- Message -->
 				<div class="control-group">
 					<div class="form-group floating-label-form-group controls">
 						<label for="message">Message</label>
@@ -31,10 +34,12 @@
 					</div>
 				</div>
 				<br>
-				<div id="success"></div>
+			<!-- Send Btn -->
+				<div id="success">
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary  btn-lg" id="sendMessageButton">Send</button>
 					</div>
+				</div>
 			</form>
 		</div>
 	</div>

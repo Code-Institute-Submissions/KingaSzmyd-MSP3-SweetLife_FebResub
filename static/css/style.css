@@ -1,3 +1,4 @@
+/* images on about.html */
 .img-thumbnail {
     padding: 0 !important;
     display: inline-block !important;
@@ -8,72 +9,52 @@
 .col-md-5 img {
     width: 65%;
 }
-
-.post-title {
-    text-align: center;
-}
-
-.col-sm-3 {
-    display: inline-block;
-}
-
-.btn-link,
-.btn-outline-link {
+/* Register and Log In navbar btn */
+.btn-link {
     font-size: large !important;
 }
-
-.fa-bars, .fa-slash {
+/* Font Awsome icons on home page */
+.fa-bars, .fa-cookie  {
     color: white;
     font-size: large;
 }
-
-.fa-cookie {
-    font-size: large;
-}
-
+/* Footer Icons */
 .fa-stack {
     color: gray !important;
 }
-
+/* Serach bar */
 .btn-outline-link {
     color: #D18195 !important;
 }
-
+/* Register and Log In Forms */
 .input-group-text {
     background-color: #E3E2E2  !important;
     color: #D18195 !important;
 }
-
-.accordion-button {
-    background-color: #D18195 !important;
-    color: white  !important;
-}
-
+/* Recipes card */
 .card {
     background-color: #E3E2E2  !important;
 }
-
-.recipes,
-.container {
-    text-align: center;
-}
-
 #time,
 #portions {
     display: inline-block !important;
 }
-
+/* Homa Page Images */
+.container {
+    text-align: center;
+}
+/* Edit and Delete btn */
 .btn-sm {
     margin: 5px; 
     background-color: lightgray !important;
     color: #D18195 !important;
     float: right;
 }
-
+/* Flash Messages */
 .alert {
     text-align: center;
 }
-
+/* 404 page */
 .callout-container {
     height: 100vh;
 
