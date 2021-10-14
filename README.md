@@ -85,7 +85,7 @@ There is also search bar helping to find the recipe in easy and fast way.
 * MongoDB was used to create a database.
 9.	[Balsamiq](https://balsamiq.com/):
 * Balsamiq was used to create the wireframes during the design process.
-10.	[Techsini.com](https://techsini.com/)
+10.	[Techsini.com](https://techsini.com/):
 * Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices.
 11. [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)):
 * Flask was used to create the project app in the Python.
@@ -93,8 +93,8 @@ There is also search bar helping to find the recipe in easy and fast way.
 * Heroku was used to deploy the project.
 ## Testing
 1.  Browsers:
-* Google Chrome 
-* Safari 
+* [Google Chrome](https://msp3-sweet-life.herokuapp.com/)
+* [Safari](https://msp3-sweet-life.herokuapp.com)
 2. Devices:  
 * The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7/8, iPhone 11 & iPhoneX.
 * A large amount of testing was done to ensure that all pages were linking correctly.
@@ -107,11 +107,11 @@ In the Add Recipe and Edit Recipe form the <textarea> has to be replace by <inpu
 The buggs occures with the Bootstrap and Start Bootstrap template concern: img-thumbnail, navbar, footer and forms. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
 #### Case 1 - images
 `.img-thumbnail {
-        padding: 0 !important;
-        display: inline-block !important;
-        border: 0 !important;
-        width: 25% !important;
-        margin: 10px !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    border: 0 !important;
+    width: 25% !important;
+    margin: 10px !important;
 }`
 #### Case 2 - navbar
 `.btn-link {
@@ -130,13 +130,16 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 `.btn-outline-link {
     color: #D18195 !important;
 }`
+
 `.input-group-text {
     background-color: #E3E2E2  !important;
     color: #D18195 !important;
 }`
+
 `.card {
     background-color: #E3E2E2  !important;
 }`
+
 `#time,
 #portions {
     display: inline-block !important;
