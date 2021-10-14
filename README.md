@@ -1,5 +1,6 @@
 # Sweet Life
-[View life project here](kingaszmyd.github.io/msp2-euquiz/)
+[View life project here](https://msp3-sweet-life.herokuapp.com/)
+![alt text](static/img/wireframes/mockup.png)
 This project was created for the community of people, who adores the desserts and would like to share their recipes through this platform.
 The project is dedicated to amateur ‘pastry chefs’ and all the people passionate aboute the cooking. The website is a space for sharing the recipes and for trying available ones. 
 This platform is giving the possibilities of managing ecipes by creating them, displaying, updating and deleting. All the new recipes are available for the community members, who have created their accounts. 
