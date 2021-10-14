@@ -30,7 +30,7 @@ def index():
 
 
 @app.route("/recipes")
-def get_recipes():
+def recipes():
     """
     Function allows to desplay all added recipes.
     """
