@@ -72,7 +72,7 @@ def contact():
 
 
 @app.route("/register", methods=["GET", "POST"])
-def add_register():
+def register():
     """
     Function allows to register the account on the website.
     """
