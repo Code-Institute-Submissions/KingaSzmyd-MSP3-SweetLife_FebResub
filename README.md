@@ -1,5 +1,5 @@
 # Sweet Life
-
+[View life project here](kingaszmyd.github.io/msp2-euquiz/)
 This project was created for the community of people, who adores the desserts and would like to share their recipes through this platform.
 The project is dedicated to amateur ‘pastry chefs’ and all the people passionate aboute the cooking. The website is a space for sharing the recipes and for trying available ones. 
 This platform is giving the possibilities of managing ecipes by creating them, displaying, updating and deleting. All the new recipes are available for the community members, who have created their accounts. 
@@ -105,7 +105,7 @@ In the Add Recipe and Edit Recipe form the <textarea> has to be replace by <inpu
 * CSS:
 The buggs occures with the Bootstrap and Start Bootstrap template concern: img-thumbnail, navbar, footer and forms. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
 #### Case 1 - images
-` .img-thumbnail {
+`.img-thumbnail {
         padding: 0 !important;
         display: inline-block !important;
         border: 0 !important;
@@ -115,9 +115,9 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 #### Case 2 - navbar
 `.btn-link {
     font-size: large !important;
-}
+}`
 
-.fa-bars {
+`.fa-bars {
     color: white;
     font-size: large;
 }`
@@ -128,15 +128,15 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 #### Case 4 - forms
 `.btn-outline-link {
     color: #D18195 !important;
-}
-.input-group-text {
+}`
+`.input-group-text {
     background-color: #E3E2E2  !important;
     color: #D18195 !important;
-}
-.card {
+}`
+`.card {
     background-color: #E3E2E2  !important;
-}
-#time,
+}`
+`#time,
 #portions {
     display: inline-block !important;
 }`
