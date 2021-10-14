@@ -1,9 +1,13 @@
-import os
-import json
+""" os module """
+import os       # import os module to provide functions in Python
+import json     # import json to encoding data in this format
 from flask import (
     Flask, render_template, request, flash, redirect, session, url_for)
+# import flask to build the app
 from flask_pymongo import PyMongo
+# import flask_pymongo to access the data in MongoDB
 from bson.objectid import ObjectId
+# import tools to work with MongoDB ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -19,11 +23,17 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
+    """
+    Function displaying home page.
+    """
     return render_template("index.html")
 
 
 @app.route("/recipes")
-def recipes():
+def get_recipes():
+    """
+    Function allows to desplay all added recipes.
+    """
     recipes = list(mongo.db.recipes.find().sort('_id', -1))
     return render_template(
         "recipes.html", page_title="All Recipes", recipes=recipes)
@@ -31,6 +41,9 @@ def recipes():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    Function allows to search the recipes through search bar.
+    """
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
@@ -38,6 +51,9 @@ def search():
 
 @app.route("/about")
 def about():
+    """
+    Function allows to displaying the team members profiles.
+    """
     data = []
     with open("data/company.json", "r") as json_data:
         data = json.load(json_data)
@@ -46,6 +62,9 @@ def about():
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
+    """
+    Function allows to send email to website administrator.
+    """
     if request.method == "POST":
         flash("Thanks {}, we have recived your message!".format(
             request.form.get("name")))
@@ -53,7 +72,10 @@ def contact():
 
 
 @app.route("/register", methods=["GET", "POST"])
-def register():
+def add_register():
+    """
+    Function allows to register the account on the website.
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -78,6 +100,9 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Function allows users log in to their accounts.
+    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -106,6 +131,9 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+    Function redirecting user to it's profile page.
+    """
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -116,6 +144,9 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
+    """
+    Function allows to log out from the user's account.
+    """
     # remove user from session cookies
     flash("You have been logged out")
     session.pop("user")
@@ -124,6 +155,9 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """
+    Function allows to add the new recipe by user.
+    """
     if request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -145,6 +179,9 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    """
+    Function allows to edit, already added recipe.
+    """
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -168,6 +205,9 @@ def edit_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    """
+    Function giving possibilities to delete recipes.
+    """
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("recipes"))
@@ -175,6 +215,9 @@ def delete_recipe(recipe_id):
 
 @app.route("/404")
 def error():
+    """
+    Function displaying the 404 error
+    """
     return render_template("404.html")
 
 
