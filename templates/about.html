@@ -26,13 +26,13 @@
                     <p><em>{{ member.opinion }}</em></p>
                 </div>
                 <div class="col-md-5 mx-auto">
-                    <img src="{{ member.image_source }}" alt="woman1" class="featurette-image image-responsive">
+                    <img src="{{ member.image_source }}" alt="member" class="featurette-image image-responsive">
                 </div>
             
             {% else %}
                 
                 <div class="col-md-5 mx-auto">
-                    <img src="{{ member.image_source }}" alt="woman1" class="featurette-image image-responsive">
+                    <img src="{{ member.image_source }}" alt="member" class="featurette-image image-responsive">
                 </div>
                 <div class="col-md-7 mx-auto">
                     <h3>{{ loop.index }}. {{ member.name }}</h3>

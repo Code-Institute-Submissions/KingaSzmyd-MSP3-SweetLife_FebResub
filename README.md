@@ -5,16 +5,15 @@ The project is dedicated to amateur ‘pastry chefs’ and all the people passio
 This platform is giving the possibilities of managing ecipes by creating them, displaying, updating and deleting. All the new recipes are available for the community members, who have created their accounts. 
 
 ## User stories
-
 ### First Time Visitor Goals
-- As a First Time Visitor, I want to easily understand the main purpose of the site and join the group of people sharing the recipes. I would like to try available recipes and share my own. 
-- As a First Time Visitor, I want to be able to easily navigate throughout the site to register my account and join the community.
+1. *As a First Time Visitor*, I want to easily understand the main purpose of the site and join the group of people sharing the recipes. I would like to try available recipes and share my own. 
+2. *As a First Time Visitor*, I want to be able to easily navigate throughout the site to register my account and join the community.
 ### Returning Visitor Goals
-- As a Returning Visitor, I want to be able easily log in to my account and be able to create, edit or delete my recipes and be able to explore the base with recipes. 
-- As a Returning Visitor, I want to find the best way to get in contact with the community with any questions I may have.
+1. *As a Returning Visitor*, I want to be able easily log in to my account and be able to create, edit or delete my recipes and be able to explore the base with recipes. 
+2. *As a Returning Visitor*, I want to find the best way to get in contact with the community with any questions I may have.
 ### Frequent User Goals
-- As a Frequent User, I want to check to see if there are any newly added recipes.
-- As a Frequent User, I want to check to see if there are any new options and updates of the website, for example forums or newsletter I can sign up to. 
+1. *As a Frequent User*, I want to check to see if there are any newly added recipes.
+2. *As a Frequent User*, I want to check to see if there are any new options and updates of the website, for example forums or newsletter I can sign up to. 
 ## Design
 ### Colour Scheme
 The main colours used are: lightgray, darkgray, white and #D18195.
@@ -23,40 +22,39 @@ The main colours used are: lightgray, darkgray, white and #D18195.
 ### Imagery
 Imagery is important. The large, background hero image is used to be striking and catch the user's attention. 
 ## Wireframes
-* Home Page Wireframe - ![View](static/img/SweetLife_Main.jpg)
-* Tablet Wireframe - ![View](static/img/SweetLife_IpadMain.jpg)
-* Mobile Wireframe - ![View](static/img/SweetLife_IphoneMain.jpg)
+* Home Page Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_Main.jpg)
+* Tablet Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_IpadMain.jpg)
+* Mobile Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_IphoneMain.jpg)
 ## Features
 The Sweet Life is the desserts recipes platform. The users need to register on the website giving their username and password to get access to their account. From their accounts they can see the recipes added by other users. They can also create they own recipes, adding them to base and editing or deleting them in anytime. If the users have any concerns or questions, they can use the email form to contact with the administrator.
 There is also search bar helping to find the recipe in easy and fast way. 
 * Responsive on all device sizes
 * Interactive elements
 ### Existing Features
-* Navigation Bar
-- Featured on all pages, the full responsive navigation bar includes links to the Home page, About us, Contact and Register/Log In pages and is identical in each page to allow for easy navigation. 
-- This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-* The landing page image
-- The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
-- This section introduces the user to Sweet Life with an eye catching image and search bar allowing to find recipe. 
-* About Us Page 
-- About Us page introduce to the user the people sanding under the project. 
-* Contact
-- This section will allow the user to refill the form and send an email to the administrator of the webpage. 
-* The Footer
-- The footer section includes links to the relevant social media sites. The links will open to a new tab to allow easy navigation for the user. Footer is identical in each page to allow for easy navigation.
-- The footer is valuable to the user as it encourages them to keep connected via social media.
-* Register 
-- This active button allows user to create an account and join the community.
-* Log In 
-- This active button allows user to easy get access to own account. 
-* New Recipe
-- This page contains a form, that allows users to add the new recipe on the website.
-* Profile
-- This is the website displaying after registration and log in.
-* Log Out
-- After one click user can safetly log out from the account.
-* Edit Recipe and Delete Recipe
-- These two options allows users to mange their own content.
+#### Navigation Bar
+* Featured on all pages, the full responsive navigation bar includes links to the Home page, About us, Contact and Register/Log In pages and is identical in each page to allow for easy navigation. 
+* This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+#### The Home Page
+* This section introduces the user to Sweet Life with an eye catching image and description of the peoject. 
+#### About Us Page 
+* About Us page introduce users to the persons sanding behind the project. 
+#### Contact Page
+* This section will allow the user to refill the form and send an email to the administrator of the webpage. 
+#### The Footer
+* The footer section includes links to the relevant social media sites. The links will open to a new tab to allow easy navigation for the user. Footer is identical in each page to allow for easy navigation.
+* The footer is valuable to the user as it encourages them to keep connected via social media.
+#### Register 
+* This active button allows user to create an account and join the community.
+#### Log In 
+* This active button allows user to easy get access to own account. 
+#### Profile
+* This is the website displaying after registration and log in, giving to the user information that the registration/log in process was successful.
+#### New Recipe
+* This page contains a form, that allows users to add the new recipe on the website.
+#### Log Out
+* After one click user can safetly log out from the account.
+#### Edit Recipe and Delete Recipe
+* These two options allow users to mange their own content, by editing and updating the recipe or deleting it.
 ### Features Left to Implement
 * Forum 
 * Possibility to commenting recipes
@@ -89,42 +87,87 @@ There is also search bar helping to find the recipe in easy and fast way.
 10.	Techsini.com
 Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices.
 11. [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)):
-* Flask was used to create the project in the Python.
+* Flask was used to create the project app in the Python.
 12. [Heroku](https://www.heroku.com/):
 * Heroku was used to deploy the project.
+## Testing
+1.  Browsers:
+* Google Chrome 
+* Safari 
+2. Devices:  
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7/8, iPhone 11 & iPhoneX.
+* A large amount of testing was done to ensure that all pages were linking correctly.
+3. Other: 
+* Friends and family members were asked to review the site, set up their accounts and add recipes to point out any bugs and/or user experience issues and check the funcionality of the page.
+4. Bugs:
+* HTML:
+In the Add Recipe and Edit Recipe form the <textarea> has to be replace by <input> placeholder.
+* CSS:
+The buggs occures with the Bootstrap and Start Bootstrap template concern: img-thumbnail, navbar, footer and forms. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
+#### Case 1 - images
+` .img-thumbnail {
+        padding: 0 !important;
+        display: inline-block !important;
+        border: 0 !important;
+        width: 25% !important;
+        margin: 10px !important;
+}`
+#### Case 2 - navbar
+`.btn-link {
+    font-size: large !important;
+}
+
+.fa-bars {
+    color: white;
+    font-size: large;
+}`
+#### Case 3 - footer
+`.fa-stack {
+    color: gray !important;
+}`
+#### Case 4 - forms
+`.btn-outline-link {
+    color: #D18195 !important;
+}
+.input-group-text {
+    background-color: #E3E2E2  !important;
+    color: #D18195 !important;
+}
+.card {
+    background-color: #E3E2E2  !important;
+}
+#time,
+#portions {
+    display: inline-block !important;
+}`
+### Unfixed Bugs
+The required attribute in contact form is not working.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML
 No errors were returned when passing through the official W3C validator
 * CSS
-No errors were found when passing through the official (Jigsaw) validator
-* JavaScript
-* Python
-* Google – Developer Tools
+No errors were found when passing through the official (Jigsaw) validator - [View](https://jigsaw.w3.org/css-validator/validator)
+* JavaScript - [View](https://jshint.com/)
+* Python - [Viev](https://extendsclass.com/python-tester.html)
+No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
 ## Testing User Stories from User Experience (UX) Section
-* First Time Visitor Goals: 
-- As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the community.
+### First Time Visitor Goals: 
+1. *As a First Time Visitor*, I want to easily understand the main purpose of the site and learn more about the community.
 Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. 
-- As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+2. *As a First Time Visitor*, I want to be able to easily be able to navigate throughout the site to find content.
 The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
 On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
 The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-* Returning Visitor Goals:
-- As a Returning Visitor, I want to find the new recipes. These are clearly shown in the recipes page.
-- As a Returning Visitor, I want to find the best way to get in contact with the community with any questions I may have.
-a.  The navigation bar clearly highlights the "Contact" Page.
-b.	Here they can fill out the form on the page.
-c.	The footer contains links to the community Facebook, Twitter and Instagram page.
-d.	Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-* Frequent User Goals:
-- As a Frequent User, I want to check to see if there are any newly added recipes. The user would already be comfortable with the website layout and can easily log in to its account.
-## Further Testing
-* The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
-* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & Ipad.
-* A large amount of testing was done to ensure that all pages were linking correctly.
-* Friends and family members were asked to review the site, set up their accounts and add recipes to point out any bugs and/or user experience issues and check the funcionality of the page.
-### Unfixed Bugs
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+### Returning Visitor Goals:
+1. *As a Returning Visitor*, I want to find the new recipes. These are clearly shown in the recipes page.
+2. *As a Returning Visitor*, I want to find the best way to get in contact with the community with any questions I may have.
+- The navigation bar clearly highlights the "Register" and "Log In" Pages.
+- Here they can fill out the forms on the page.
+- The footer contains links to the community Facebook, Twitter and Instagram page.
+- Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
+### Frequent User Goals:
+1. *As a Frequent User*, I want to check to see if there are any newly added recipes. The user would already be comfortable with the website layout and can easily log in to its account.
 ## Deployment
 ## Credits
 ### Code 
