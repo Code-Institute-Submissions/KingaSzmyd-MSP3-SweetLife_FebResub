@@ -85,8 +85,8 @@ There is also search bar helping to find the recipe in easy and fast way.
 * MongoDB was used to create a database.
 9.	[Balsamiq](https://balsamiq.com/):
 * Balsamiq was used to create the wireframes during the design process.
-10.	Techsini.com
-Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices.
+10.	[Techsini.com](https://techsini.com/)
+* Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices.
 11. [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)):
 * Flask was used to create the project app in the Python.
 12. [Heroku](https://www.heroku.com/):
@@ -170,6 +170,15 @@ The user can also scroll to the bottom of any page on the site to locate social 
 ### Frequent User Goals:
 1. *As a Frequent User*, I want to check to see if there are any newly added recipes. The user would already be comfortable with the website layout and can easily log in to its account.
 ## Deployment
+### GitHub Pages
+The project was deployed to Heroku using the following steps:
+1. Log in to [Heroku](https://dashboard.heroku.com) account.
+2. Use Heroku (Web) UI to Deploy the Application.
+3. Choose the deployment method GitHub.
+4. Connect to GitHub by searching for the right repository.
+5. Click "Enable Automatic Deploys" to ensure that any changes made on GitHub are automatically deployed on Heroku.
+6. Deply the GitHub branch "main".
+7. [Deployed Website](https://msp3-sweet-life.herokuapp.com/) 
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, callout, buttons, cards and forms.
@@ -179,15 +188,15 @@ The user can also scroll to the bottom of any page on the site to locate social 
 ### Content
 * [Wikipedia](https://www.wikipedia.org/)
 * [Nigella.com](https://www.nigella.com/)  
-* Cooking Websites  
+* [BBC Good Food](https://www.bbcgoodfood.com/)
 * [Font Awsome](https://fontawesome.com/)
 ### Media
 * [Unsplash](https://unsplash.com/)
 * [Nigella.com](https://www.nigella.com/) 
-* Cooking Websites 
+* [BBC Good Food](https://www.bbcgoodfood.com/)
 
 ## Acknowledgements
-, my mentor, and Tutor  for helpful suggestions and constructive feedback.
+Anthony Ugwu, my mentor, and Tutor team for helpful suggestions and constructive feedback.
 
 
 
