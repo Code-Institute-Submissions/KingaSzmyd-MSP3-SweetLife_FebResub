@@ -122,7 +122,7 @@ All added recipes are displaying on the recipe.html page. User can edit and corr
 * Friends and family members were asked to review the site, set up their accounts and add recipes to point out any bugs and/or user experience issues and check the funcionality of the page.
 4. Bugs:
 * HTML:
-In the Add Recipe and Edit Recipe form the <textarea> has to be replace by <input> placeholder.
+In the Add Recipe and Edit Recipe form the <textarea> has to be replace by <input>. The <textarea> is not working during Edit Recipe.
 * CSS:
 The buggs occures with the Bootstrap and Start Bootstrap template concern: img-thumbnail, navbar, footer and forms. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
 #### Case 1 - images
@@ -164,16 +164,22 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 #portions {
     display: inline-block !important;
 }`
+#### Case 5 - card for displaying recipe
+`.accordion-button {
+    color: #D18195 !important;
+    background-color: white !important;
+    margin-top: 50px !important;
+}`
 ### Unfixed Bugs
 The required attribute in contact form is not working.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
-* HTML
+* HTML - [View](https://validator.w3.org/)
 No errors were returned when passing through the official W3C validator
 * CSS
 No errors were found when passing through the official (Jigsaw) validator - [View](https://jigsaw.w3.org/css-validator/validator)
 * JavaScript - [View](https://jshint.com/)
-* Python - [Viev](https://extendsclass.com/python-tester.html)
+* Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
 ## Testing User Stories from User Experience (UX) Section
 ### First Time Visitor Goals: 
@@ -193,7 +199,7 @@ The user can also scroll to the bottom of any page on the site to locate social 
 ### Frequent User Goals:
 1. *As a Frequent User*, I want to check to see if there are any newly added recipes. The user would already be comfortable with the website layout and can easily log in to its account.
 ## Deployment
-### GitHub Pages
+### Heroku 
 The project was deployed to Heroku using the following steps:
 1. Log in to [Heroku](https://dashboard.heroku.com) account.
 2. Use Heroku (Web) UI to Deploy the Application.
@@ -217,7 +223,6 @@ The project was deployed to Heroku using the following steps:
 * [Unsplash](https://unsplash.com/)
 * [Nigella.com](https://www.nigella.com/) 
 * [BBC Good Food](https://www.bbcgoodfood.com/)
-
 ## Acknowledgements
 Anthony Ugwu, my mentor, and Tutor team for helpful suggestions and constructive feedback.
 
