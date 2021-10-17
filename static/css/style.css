@@ -99,3 +99,9 @@
     font-size: 300%;
     float: right;
 }
+
+.accordion-button {
+    color: #D18195 !important;
+    background-color: white !important;
+    margin-top: 50px !important;
+}

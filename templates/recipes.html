@@ -30,8 +30,10 @@
 		<div class="col-lg-8 col-md-10 mx-auto">
 			{% for recipe in recipes %}
 				{% if session.user|lower == recipe.created_by|lower %}
-					<a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Delete</a>
-					<a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Edit</a>
+					<div class="container">
+						<a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Delete</a>
+						<a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn btn-secondary btn-sm">Edit</a>
+					</div>
                 {% endif %}
    				
 					<div class="row g-0">
@@ -42,9 +44,20 @@
 							<div class="card-body">
 							  <h5 class="card-title"><em>{{ recipe.category_name }}</em>: {{ recipe.recipe_name }}</h5>
 							  <h6 class="card-title"><i class="fas fa-chart-pie"></i>{{ recipe.recipe_makes_for }} portions <i class="fas fa-clock"></i>{{ recipe.due_time }} minutes</h6>
-							  <p class="card-text">INGREDIENTS: {{ recipe.recipe_ingredients }}</p>
-							  <p class="card-text"><strong><em>Description: </em></strong>{{ recipe.recipe_description }}</p>
 							  <p class="card-text"><small class="text-muted">by: {{ recipe.created_by }}</small></p>
+							  	<div class="accordion accordion-flush" id="accordionFlush">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse" aria-expanded="false" aria-controls="flush-collapse">
+										Read More
+										</button>
+										</h2>
+									<div id="flush-collapse" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlush">
+										<div class="accordion-body"><p class="card-text">INGREDIENTS: {{ recipe.recipe_ingredients }}</p>
+											<p class="card-text"><strong><em>Description: </em></strong>{{ recipe.recipe_description }}</p>
+										</div>
+									</div>
+								</div> 
 							</div>	
 						</div>
 					</div>

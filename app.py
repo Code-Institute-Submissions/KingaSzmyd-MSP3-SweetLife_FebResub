@@ -24,7 +24,7 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     """
-    Function displaying home page.
+    Function allows to display home page.
     """
     return render_template("index.html")
 
@@ -32,7 +32,7 @@ def index():
 @app.route("/recipes")
 def recipes():
     """
-    Function allows to desplay all added recipes.
+    Function allows to display all added recipes.
     """
     recipes = list(mongo.db.recipes.find().sort('_id', -1))
     return render_template(
