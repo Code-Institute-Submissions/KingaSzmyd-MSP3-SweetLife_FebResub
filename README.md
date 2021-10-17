@@ -69,6 +69,17 @@ There is also search bar helping to find the recipe in easy and fast way.
 * Forum 
 * Possibility to commenting recipes
 * Another feature idea
+### Project's Model
+Project's model is based on Add New Recipe Form. The user needs to complete the following fields: 
+1. Choose the category name
+2. Add recipe name
+3. Add amount of time needed to prepare the dessert.
+4. Add amount of portions made from recipe.
+5. Add the ingredients.
+6. Add the recipe description: explain how to make the dessert.
+7. Add the link to image address.
+8. Click the btn "Add Recipe".
+All added recipes are displaying on the recipe.html page. User can edit and correct own recipes and also deleted them.
 ## Technologies Used
 ### Languages Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
