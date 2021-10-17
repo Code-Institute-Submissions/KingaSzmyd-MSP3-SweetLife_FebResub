@@ -41,14 +41,14 @@
         <br>
     <!-- Ingredients -->
         <div class="input-group col-lg-8 col-md-10 mx-auto">
-            <span class="input-group-text">Ingredients</span>
+            <span class="input-group-text" id="recipe_ingredients">Ingredients</span>
             <input type="text" class="form-control" value="{{ recipe.recipe_ingredients }}" name="recipe_ingredients" id="recipe_ingredients" aria-label="Ingredients" required>
         </div>
         <br>
     <!-- Recipe Description -->
         <div class="input-group col-lg-8 col-md-10 mx-auto">
-            <span class="input-group-text">Description</span>
-            <input type="text" class="form-control"  value="{{ recipe.recipe_description }}" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="150" aria-label="Recipe description" required>
+            <span class="input-group-text" id="recipe_description">Description</span>
+            <input type="text" row="10" class="form-control"  value="{{ recipe.recipe_description }}" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="200" aria-label="Recipe description" required>
         </div>
         <br>
     <!-- Recipe Image -->
