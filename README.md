@@ -182,11 +182,7 @@ The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to va
 * HTML - [View](https://validator.w3.org/)
 No errors were returned when passing through the official W3C validator
 * CSS - [View](https://jigsaw.w3.org/css-validator/validator)
-<<<<<<< HEAD
 No errors were found when passing through the official (Jigsaw) validator 
-=======
-No errors were found when passing through the official (Jigsaw) validator
->>>>>>> 2823e485658e9eb057692ecba840131620f4424f
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
