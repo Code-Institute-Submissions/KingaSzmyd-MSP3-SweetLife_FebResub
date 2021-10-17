@@ -171,13 +171,14 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
     margin-top: 50px !important;
 }`
 ### Unfixed Bugs
-The required attribute in contact form is not working.
+* The required attribute in contact form is not working.
+* The favicon is not displaying.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
 No errors were returned when passing through the official W3C validator
-* CSS
-No errors were found when passing through the official (Jigsaw) validator - [View](https://jigsaw.w3.org/css-validator/validator)
+* CSS - [View](https://jigsaw.w3.org/css-validator/validator)
+No errors were found when passing through the official (Jigsaw) validator 
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
@@ -214,6 +215,7 @@ The project was deployed to Heroku using the following steps:
 * [Code Institute-1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/ec081e87b3ea48ef986a7bd33f66e3b2/227076cacf094ba6aa17a6874d7c8fa0/?child=first) - learning materials from the course, how to build Flask app.
 * [Code Institute-2](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) - learning materials from the course, how to build application with Mongo database and how to perform CRUD calls. 
 * [Startbootstrap](https://startbootstrap.com/theme/clean-blog) - template used to create the background image with navbar and footer.
+* [Stackoverflow](https://stackoverflow.com/) - hints used to fixing some of the pylint comments.
 ### Content
 * [Wikipedia](https://www.wikipedia.org/)
 * [Nigella.com](https://www.nigella.com/)  
@@ -225,10 +227,6 @@ The project was deployed to Heroku using the following steps:
 * [BBC Good Food](https://www.bbcgoodfood.com/)
 ## Acknowledgements
 Anthony Ugwu, my mentor, and Tutor team for helpful suggestions and constructive feedback.
-
-
-
-
 
 
 
