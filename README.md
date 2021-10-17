@@ -1,6 +1,6 @@
 # Sweet Life
 [View life project here](https://msp3-sweet-life.herokuapp.com/)
-![alt text](static/img/wireframes/mockup.png)
+![alt text](static/img/screenshots/mockup.png)
 This project was created for the community of people, who adores the desserts and would like to share their recipes through this platform.
 The project is dedicated to amateur ‘pastry chefs’ and all the people passionate aboute the cooking. The website is a space for sharing the recipes and for trying available ones. 
 This platform is giving the possibilities of managing ecipes by creating them, displaying, updating and deleting. All the new recipes are available for the community members, who have created their accounts. 
@@ -41,21 +41,30 @@ There is also search bar helping to find the recipe in easy and fast way.
 * About Us page introduce users to the persons sanding behind the project. 
 #### Contact Page
 * This section will allow the user to refill the form and send an email to the administrator of the webpage. 
+![alt text](static/img/screenshots/contactForm.png)
 #### The Footer
 * The footer section includes links to the relevant social media sites. The links will open to a new tab to allow easy navigation for the user. Footer is identical in each page to allow for easy navigation.
 * The footer is valuable to the user as it encourages them to keep connected via social media.
 #### Register 
 * This active button allows user to create an account and join the community.
+![alt text](static/img/screenshots/register.png)
 #### Log In 
 * This active button allows user to easy get access to own account. 
+![alt text](static/img/screenshots/logIn.png)
 #### Profile
 * This is the website displaying after registration and log in, giving to the user information that the registration/log in process was successful.
 #### New Recipe
 * This page contains a form, that allows users to add the new recipe on the website.
+![alt text](static/img/screenshots/addRecipe.png)
 #### Log Out
 * After one click user can safetly log out from the account.
 #### Edit Recipe and Delete Recipe
 * These two options allow users to mange their own content, by editing and updating the recipe or deleting it.
+![alt text](static/img/screenshots/editRecipe.png)
+#### Recipes
+* This page displays all added recipes.
+![alt text](static/img/screenshots/recipes.png)
+![alt text](static/img/screenshots/fullRecipe.png)
 ### Features Left to Implement
 * Forum 
 * Possibility to commenting recipes
