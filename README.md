@@ -171,14 +171,22 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
     margin-top: 50px !important;
 }`
 ### Unfixed Bugs
+<<<<<<< HEAD
 * The required attribute in contact form is not working.
 * The favicon is not displaying.
+=======
+The required attribute in contact form is not working and the flavicon is not displaying.
+>>>>>>> 2823e485658e9eb057692ecba840131620f4424f
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
 No errors were returned when passing through the official W3C validator
 * CSS - [View](https://jigsaw.w3.org/css-validator/validator)
+<<<<<<< HEAD
 No errors were found when passing through the official (Jigsaw) validator 
+=======
+No errors were found when passing through the official (Jigsaw) validator
+>>>>>>> 2823e485658e9eb057692ecba840131620f4424f
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
