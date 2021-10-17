@@ -34,6 +34,7 @@ def recipes():
     """
     Function allows to display all added recipes.
     """
+    # pylint: disable=redefined-outer-name
     recipes = list(mongo.db.recipes.find().sort('_id', -1))
     return render_template(
         "recipes.html", page_title="All Recipes", recipes=recipes)
@@ -45,6 +46,7 @@ def search():
     Function allows to search the recipes through search bar.
     """
     query = request.form.get("query")
+    # pylint: disable=redefined-outer-name
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
 
@@ -84,6 +86,7 @@ def register():
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("register"))
+        # pylint: disable=redefined-outer-name
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
