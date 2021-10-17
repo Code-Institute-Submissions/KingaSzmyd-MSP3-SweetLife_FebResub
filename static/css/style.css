@@ -1,4 +1,9 @@
-/* images on about.html */
+/* Homa Page Images */
+.container {
+    text-align: center;
+}
+
+/* Images on about.html */
 .img-thumbnail {
     padding: 0 !important;
     display: inline-block !important;
@@ -39,10 +44,14 @@
 #portions {
     display: inline-block !important;
 }
-/* Homa Page Images */
-.container {
-    text-align: center;
+
+/* Accordition in card displaying recipe */
+.accordion-button {
+    color: #D18195 !important;
+    background-color: white !important;
+    margin-top: 50px !important;
 }
+
 /* Edit and Delete btn */
 .btn-sm {
     margin: 5px; 
@@ -50,6 +59,7 @@
     color: #D18195 !important;
     float: right;
 }
+
 /* Flash Messages */
 .alert {
     text-align: center;
@@ -98,10 +108,4 @@
     color: white;
     font-size: 300%;
     float: right;
-}
-
-.accordion-button {
-    color: #D18195 !important;
-    background-color: white !important;
-    margin-top: 50px !important;
 }
