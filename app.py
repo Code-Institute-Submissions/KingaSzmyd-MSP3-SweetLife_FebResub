@@ -55,7 +55,7 @@ def about():
     Function allows to displaying the team members profiles.
     """
     data = []
-    with open("data/company.json", "r") as json_data:
+    with open("data/company.json", "r", encoding="utf-8") as json_data:
         data = json.load(json_data)
     return render_template("about.html", page_title="About Us", company=data)
 
