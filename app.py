@@ -11,7 +11,7 @@ from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
-    env.filterwarnings("ignore")
+    jls_extract_var = env
 
 app = Flask(__name__)
 
