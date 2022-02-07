@@ -26,11 +26,24 @@
 /* Footer Icons */
 .fa-stack {
     color: gray !important;
+
 }
 /* Serach bar */
-.btn-outline-link {
+.btn-outline-link, .btn-sm {
     color: #D18195 !important;
+    background-color: #E3E2E2  !important;
+    margin: 5px; 
+    position: relative;
 }
+
+.textfield {
+    width:100%
+  }
+  
+.textfield > input {
+    width:100%
+}
+  
 /* Register and Log In Forms */
 .input-group-text {
     background-color: #E3E2E2  !important;
@@ -53,7 +66,7 @@
 }
 
 /* Edit and Delete btn */
-.btn-sm {
+.fixed {
     margin: 5px; 
     background-color: lightgray !important;
     color: #D18195 !important;
