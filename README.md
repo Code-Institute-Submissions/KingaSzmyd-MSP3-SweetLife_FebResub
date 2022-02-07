@@ -171,12 +171,8 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
     margin-top: 50px !important;
 }`
 ### Unfixed Bugs
-<<<<<<< HEAD
 * The required attribute in contact form is not working.
 * The favicon is not displaying.
-=======
-The required attribute in contact form is not working and the flavicon is not displaying.
->>>>>>> 2823e485658e9eb057692ecba840131620f4424f
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
@@ -213,6 +209,16 @@ The project was deployed to Heroku using the following steps:
 5. Click "Enable Automatic Deploys" to ensure that any changes made on GitHub are automatically deployed on Heroku.
 6. Deply the GitHub branch "main".
 7. [Deployed Website](https://msp3-sweet-life.herokuapp.com/) 
+### Cloning
+You can clone a repository so that it can be worked on locally by following steps:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+    $ gh repo clone KingaSzmyd/MSP3-SweetLife
+7. Press Enter. Your local clone will be created.
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, callout, buttons, cards and forms.
