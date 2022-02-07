@@ -202,23 +202,40 @@ The user can also scroll to the bottom of any page on the site to locate social 
 ## Deployment
 ### Heroku 
 The project was deployed to Heroku using the following steps:
+
 1. Log in to [Heroku](https://dashboard.heroku.com) account.
+
 2. Use Heroku (Web) UI to Deploy the Application.
+
 3. Choose the deployment method GitHub.
+
 4. Connect to GitHub by searching for the right repository.
+
 5. Click "Enable Automatic Deploys" to ensure that any changes made on GitHub are automatically deployed on Heroku.
+
 6. Deply the GitHub branch "main".
-7. [Deployed Website](https://msp3-sweet-life.herokuapp.com/) 
+
+7. [Deployed Website](https://msp3-sweet-life.herokuapp.com/)
+
 ### Cloning
 You can clone a repository so that it can be worked on locally by following steps:
+
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+
 2. Under the repository name, click "Clone or download".
+
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
 4. Open Git Bash.
+
 5. Change the current working directory to the location where you want the cloned directory to be made.
+
 6. Type git clone, and then paste the URL you copied in Step 3.
+
 $ gh repo clone KingaSzmyd/MSP3-SweetLife
+
 7. Press Enter. Your local clone will be created.
+
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, callout, buttons, cards and forms.
