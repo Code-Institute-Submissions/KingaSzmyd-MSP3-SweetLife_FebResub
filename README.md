@@ -232,7 +232,7 @@ You can clone a repository so that it can be worked on locally by following step
 
 6. Type git clone, and then paste the URL you copied in Step 3.
 
-$ gh repo clone KingaSzmyd/MSP3-SweetLife
+* $ gh repo clone KingaSzmyd/MSP3-SweetLife
 
 7. Press Enter. Your local clone will be created.
 
