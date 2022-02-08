@@ -1,1 +1,1 @@
-web gunicorn sweetlife.wsgi:application
+web: python app.py
