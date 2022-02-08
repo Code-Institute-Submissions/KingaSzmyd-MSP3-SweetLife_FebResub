@@ -9,7 +9,7 @@
             <div class="input-group mb-3">
                 <label class="input-group-text" for="category_name">Dessert Category</label>
                 <select class="form-select validate" name="category_name" id="category_name" required>
-                  <option selected>Choose Category</option>
+                  <option value="" selected>Choose Category</option>
                   {% for category in categories %}
                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                   {% endfor %}
@@ -20,19 +20,19 @@
     <!-- Recipe Name -->
         <div class="col-lg-8 col-md-10 mx-auto input-group mb-3">
             <span class="input-group-text" id="recipe_name">Recipe Name</span>
-            <input type="text" name="recipe_name" class="form-control" aria-label="Recipe Name" aria-describedby="inputGroup-sizing-default" required>
+            <input type="text" name="recipe_name" class="form-control" aria-label="Recipe Name" aria-describedby="recipe_name" required>
           </div>
         <br>
     <!-- Due Time -->
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="due_time"><i class="fas fa-clock"></i></span>
-                <input type="text" name="due_time" class="form-control" placeholder="time" aria-label="Time" aria-describedby="basic-addon1" required>
+                <input type="text" name="due_time" class="form-control" placeholder="time" aria-label="Time" aria-describedby="time" required>
             </div>
         <br>
     <!-- Recipe Makes For - Portions -->
             <div class="input-group col-sm-4 mx-auto">
                 <span class="input-group-text" id="recipe_makes_for"><i class="fas fa-chart-pie"></i></span>
-                <input type="text" name="recipe_makes_for" class="form-control" placeholder="portions" aria-label="portions" aria-describedby="basic-addon1" required>
+                <input type="text" name="recipe_makes_for" class="form-control" placeholder="portions" aria-label="portions" aria-describedby="portions" required>
             </div>
         <br>
     <!-- Ingrednients -->
@@ -44,7 +44,7 @@
     <!-- Recipe Description -->
         <div class="input-group col-lg-8 col-md-10 mx-auto">
             <span class="input-group-text" id="recipe_description">Description</span>
-            <input class="form-control" name="recipe_description" id="recipe_description" minlenght="10" maxlenght="200" aria-label="Description" required>
+            <input class="form-control" name="recipe_description" id="recipe_description" minlenght="10" aria-label="Description" required>
         </div>
         <br>
     <!-- Recipe Image -->

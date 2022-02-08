@@ -7,20 +7,20 @@
         <form method="POST" action="{{ url_for('login') }}">
         <!-- Username -->
             <div class="col-md-6 mx-auto input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">
+                <span class="input-group-text" id="username">
                     <i class="fas fa-user-cog"></i>
                     <label for="username"></label>
                 </span>
-                <input type="text" class="form-control" name="username" placeholder="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="username" aria-describedby="addon-wrapping" required>
+                <input type="text" class="form-control" name="username" placeholder="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="username" aria-describedby="username" required>
             </div>
             <br>
         <!-- Password -->
             <div class="col-md-6 mx-auto input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">
+                <span class="input-group-text" id="password">
                     <i class="fas fa-key"></i>
                     <label for="password"></label>
                 </span>
-                <input type="password" id="password" class="form-control validate" name="password" placeholder="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="password" aria-describedby="addon-wrapping required">
+                <input type="password" id="password" class="form-control validate" name="password" placeholder="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="password" aria-describedby="password" required>
             </div>
             <br>
         <!-- Log In Btn -->
