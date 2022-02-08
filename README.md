@@ -170,6 +170,8 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
     background-color: white !important;
     margin-top: 50px !important;
 }`
+#### Case 6 - favicon
+Change of the invalid quotation marks, comming from not English keyboard.
 ### Unfixed Bugs
 * The required attribute in contact form is not working.
 ## Validator Testing
