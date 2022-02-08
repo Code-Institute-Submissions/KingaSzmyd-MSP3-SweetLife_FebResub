@@ -172,7 +172,6 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 }`
 ### Unfixed Bugs
 * The required attribute in contact form is not working.
-* The favicon is not displaying.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)

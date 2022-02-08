@@ -11,7 +11,7 @@
 				<div class="card-body">
 					<form action="{{ url_for('search') }}" method="POST">
 						<div class="input-group mb-3">
-							<input type="text" name="query" class="textfield form-control" id="query" placeholder="" aria-label="query" aria-describedby="button-addon2" required>
+							<input type="text" name="query" class="textfield form-control" id="query" placeholder="" aria-label="query" aria-describedby="query" required>
 							<label for="query"></label>
 							<div class="search">
 								<a href="{{ url_for('recipes') }}"></a>
@@ -54,6 +54,7 @@
 									Read More
 									</button>
 									</h2>
+								</div>
 								<div id="flush-collapse" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlush">
 									<div class="accordion-body"><p class="card-text">INGREDIENTS: {{ recipe.recipe_ingredients }}</p>
 										<p class="card-text"><strong><em>Description: </em></strong>{{ recipe.recipe_description }}</p>
