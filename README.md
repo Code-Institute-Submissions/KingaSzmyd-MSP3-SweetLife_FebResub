@@ -23,9 +23,9 @@ The main colours used are: lightgray, darkgray, white and #D18195.
 ### Imagery
 Imagery is important. The large, background hero image is used to be striking and catch the user's attention. 
 ## Wireframes
-* Home Page Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_Main.jpg)
-* Tablet Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_IpadMain.jpg)
-* Mobile Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/wireframes/SweetLife_IphoneMain.jpg)
+* Home Page Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/screenshots/sweetLife_Main.jpg)
+* Tablet Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/screenshots/sweetLife_IpadMain.jpg)
+* Mobile Wireframe - [View](https://github.com/KingaSzmyd/MSP3-SweetLife/blob/main/static/img/screenshots/sweetLife_IphoneMain.jpg)
 ## Features
 The Sweet Life is the desserts recipes platform. The users need to register on the website giving their username and password to get access to their account. From their accounts they can see the recipes added by other users. They can also create they own recipes, adding them to base and editing or deleting them in anytime. If the users have any concerns or questions, they can use the email form to contact with the administrator.
 There is also search bar helping to find the recipe in easy and fast way. 
@@ -177,13 +177,10 @@ Change of the invalid quotation marks, comming from not English keyboard.
 * Code validation shows Duplicated ID, but when try to fix this error and change id to class, the website is loosing it's funcionality.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
-* HTML - [View](https://validator.w3.org/)
-No errors were returned when passing through the official W3C validator
-* CSS - [View](https://jigsaw.w3.org/css-validator/validator)
-No errors were found when passing through the official (Jigsaw) validator 
-* JavaScript - [View](https://jshint.com/)
-* Python - [View](https://extendsclass.com/python-tester.html)
-No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
+* [HTML](https://validator.w3.org/)
+* [CSS](https://jigsaw.w3.org/css-validator/validator)
+* [JavaScript](https://jshint.com/)
+* [Python](https://extendsclass.com/python-tester.html)
 ## Testing User Stories from User Experience (UX) Section
 ### First Time Visitor Goals: 
 1. *As a First Time Visitor*, I want to easily understand the main purpose of the site and learn more about the community.
