@@ -238,6 +238,10 @@ You can clone a repository so that it can be worked on locally by following step
 
 7. Press Enter. Your local clone will be created.
 
+8. Run the terminal by using commend:
+
+* python3 app.py
+
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, callout, buttons, cards and forms.
