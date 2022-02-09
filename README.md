@@ -174,6 +174,7 @@ The buggs occures with the Bootstrap and Start Bootstrap template concern: img-t
 Change of the invalid quotation marks, comming from not English keyboard.
 ### Unfixed Bugs
 * The required attribute in contact form is not working.
+* Code validation shows Duplicated ID, but when try to fix this error and change id to class, the website is loosing it's funcionality.
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
@@ -254,7 +255,7 @@ You can clone a repository so that it can be worked on locally by following step
 * [Nigella.com](https://www.nigella.com/) 
 * [BBC Good Food](https://www.bbcgoodfood.com/)
 ## Acknowledgements
-Anthony Ugwu, my mentor, and Tutor team for helpful suggestions and constructive feedback.
+Brian Macharia, my mentor, and Tutor team for helpful suggestions and constructive feedback.
 
 
 
