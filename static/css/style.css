@@ -16,7 +16,8 @@
 }
 /* Register and Log In navbar btn */
 .btn-link {
-    font-size: large !important;
+    margin: 10px;
+    background: #E59866;
 }
 /* Font Awsome icons on home page */
 .fa-bars {
